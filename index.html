@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foldr — All your file tools, in one place</title>
+<meta name="description" content="Edit PDFs, images and videos directly in your browser. Files never leave your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try{var p=JSON.parse(localStorage.getItem('prefs')||'{}');document.documentElement.dataset.theme=p.theme||'system';document.documentElement.dataset.rm=!!p.rm}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="nav">
+  <a href="#/" class="logo" aria-label="Foldr home">Foldr</a>
+  <nav id="nav" aria-label="Main"></nav>
+  <button class="btn sm" id="sbtn" aria-label="Search tools (Ctrl+K)">Search <kbd>Ctrl K</kbd></button>
+  <button class="btn sm" id="tbtn" aria-label="Toggle theme">◐</button>
+  <button class="btn sm" id="setbtn" aria-label="Settings">Settings</button>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer>Files are processed locally in your browser and never uploaded.</footer>
+<dialog id="dlg" aria-label="Dialog"></dialog>
+<script type="module" src="app.js"></script>
+</body>
+</html>
